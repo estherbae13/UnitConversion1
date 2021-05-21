@@ -21,39 +21,34 @@ namespace UnitConversion1
         {
             int choice = Convert.ToInt32(conversionChoiceInput.Text);
             double value = Convert.ToDouble(valueInput.Text);
-
-            //call on m1
-            double convert = InchesToCm(value);
-            outputLabel.Text = $"{value} inches is {convert.ToString(".##")}cm";
-
-            //call on m2
-            double convert2 = FeetToCm(value);
-            outputLabel.Text = $"{value} feet is {convert2.ToString(".##")}cm";
-
-            //call on m3
-            double convert3 = YardsToMetres(value);
-            outputLabel.Text = $"{value} yards is {convert3.ToString(".##")}m";
-
-            //call on m4
-            double convert4 = MilesToKm(value);
-            outputLabel.Text = $"{value} miles is {convert4.ToString(".##")}km";
-
-
+            
             if (choice == 1)
             {
                 InchesToCm(value);
+
+                double convert = InchesToCm(value);
+                outputLabel.Text = $"{value} inches is {convert.ToString(".##")}cm";
             }
             else if (choice == 2)
             {
                 FeetToCm(value);
+
+                double convert2 = FeetToCm(value);
+                outputLabel.Text = $"{value} feet is {convert2.ToString(".##")}cm";
             }
             else if (choice == 3)
             {
                 YardsToMetres(value);
+
+                double convert3 = YardsToMetres(value);
+                outputLabel.Text = $"{value} yards is {convert3.ToString(".##")}m";
             }
             else if (choice == 4)
             {
                 MilesToKm(value);
+
+                double convert4 = MilesToKm(value);
+                outputLabel.Text = $"{value} miles is {convert4.ToString(".##")}km";
             }
             else
             {
