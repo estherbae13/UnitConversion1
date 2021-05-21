@@ -47,7 +47,7 @@ namespace UnitConversion1
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(232, 11);
+            this.titleLabel.Location = new System.Drawing.Point(268, 9);
             this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(276, 37);
@@ -135,7 +135,7 @@ namespace UnitConversion1
             // 
             this.conversionChoiceInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conversionChoiceInput.Location = new System.Drawing.Point(561, 394);
-            this.conversionChoiceInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.conversionChoiceInput.Margin = new System.Windows.Forms.Padding(4);
             this.conversionChoiceInput.Name = "conversionChoiceInput";
             this.conversionChoiceInput.Size = new System.Drawing.Size(132, 35);
             this.conversionChoiceInput.TabIndex = 9;
@@ -144,7 +144,7 @@ namespace UnitConversion1
             // 
             this.valueInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueInput.Location = new System.Drawing.Point(561, 465);
-            this.valueInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.valueInput.Margin = new System.Windows.Forms.Padding(4);
             this.valueInput.Name = "valueInput";
             this.valueInput.Size = new System.Drawing.Size(132, 35);
             this.valueInput.TabIndex = 10;
@@ -157,7 +157,7 @@ namespace UnitConversion1
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateButton.ForeColor = System.Drawing.Color.White;
             this.calculateButton.Location = new System.Drawing.Point(117, 555);
-            this.calculateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(577, 69);
             this.calculateButton.TabIndex = 11;
@@ -182,7 +182,7 @@ namespace UnitConversion1
             this.Controls.Add(this.conversions4Label);
             this.Controls.Add(this.conversions1Label);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Unit Conversion";
             this.ResumeLayout(false);

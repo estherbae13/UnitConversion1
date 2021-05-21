@@ -22,6 +22,23 @@ namespace UnitConversion1
             int choice = Convert.ToInt32(conversionChoiceInput.Text);
             double value = Convert.ToDouble(valueInput.Text);
 
+            //call on m1
+            double convert = InchesToCm(value);
+            outputLabel.Text = $"{value} inches is {convert.ToString(".##")}cm";
+
+            //call on m2
+            double convert2 = FeetToCm(value);
+            outputLabel.Text = $"{value} feet is {convert2.ToString(".##")}cm";
+
+            //call on m3
+            double convert3 = YardsToMetres(value);
+            outputLabel.Text = $"{value} yards is {convert3.ToString(".##")}m";
+
+            //call on m4
+            double convert4 = MilesToKm(value);
+            outputLabel.Text = $"{value} miles is {convert4.ToString(".##")}km";
+
+
             if (choice == 1)
             {
                 InchesToCm(value);
@@ -44,35 +61,28 @@ namespace UnitConversion1
             }
         }
 
-        public void InchesToCm(double inches)
+        public double InchesToCm(double inches)
         {
-            string choice = Convert.ToString(conversionChoiceInput.Text);
-            double value = Convert.ToDouble(valueInput.Text);
-
             double cm = inches * 2.54;
-
-            outputLabel.Text = $"{inches} inches is {cm.ToString(".##")}cm";
+            return cm;
         }
 
-        public void FeetToCm(double feet)
+        public double FeetToCm(double feet)
         {
             double cm2 = feet * 30.48;
-
-            outputLabel.Text = $"{feet} feet is {cm2.ToString(".##")}cm";
+            return cm2;
         }
 
-        public void YardsToMetres(double yards)
+        public double YardsToMetres(double yards)
         {
             double m = yards * 0.91;
-
-            outputLabel.Text = $"{yards} yards is {m.ToString(".##")}m";
+            return m;
         }
 
-        public void MilesToKm(double miles)
+        public double MilesToKm(double miles)
         {
             double km = miles * 1.6;
-
-            outputLabel.Text = $"{miles} miles is {km.ToString(".##")}km";
+            return km;
         }
     }
 }
