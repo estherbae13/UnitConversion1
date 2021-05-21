@@ -51,28 +51,28 @@ namespace UnitConversion1
 
             double cm = inches * 2.54;
 
-            outputLabel.Text = $"{inches} inches is {cm}cm";
+            outputLabel.Text = $"{inches} inches is {cm.ToString(".##")}cm";
         }
 
         public void FeetToCm(double feet)
         {
             double cm2 = feet * 30.48;
 
-            outputLabel.Text = $"{feet} feet is {cm2}cm";
+            outputLabel.Text = $"{feet} feet is {cm2.ToString(".##")}cm";
         }
 
         public void YardsToMetres(double yards)
         {
             double m = yards * 0.91;
 
-            outputLabel.Text = $"{yards} yards is {m}m";
+            outputLabel.Text = $"{yards} yards is {m.ToString(".##")}m";
         }
 
         public void MilesToKm(double miles)
         {
             double km = miles * 1.6;
 
-            outputLabel.Text = $"{miles} miles is {km}km";
+            outputLabel.Text = $"{miles} miles is {km.ToString(".##")}km";
         }
     }
 }
